@@ -21,11 +21,12 @@ function App() {
   let displyusers = userdata.slice(pagenumber * 3, usersperpage + usersvisited).map((value) => {
     return (
      
-      <div className="card" className="d-flex flex-row p-3 m-3 rounded mx-auto d-block text-white bg-dark"  style={{ width: ' 25rem' }}>
-        <img src={value.avatar} className="align-self-center" className="rounded" alt="" />
+      <div className="d-flex flex-row p-3 m-3 rounded mx-auto d-block text-white bg-dark"  style={{ width: ' 25rem' }}>
+        <img src={value.avatar} className="align-self-center rounded" alt="" />
         <div className="card-body">
           <h5 className="">{value.first_name} <span> {value.last_name} </span></h5>
-          <p className="text-left">{value.email}</p>
+          <p className="text-left"><b>Email:</b> {value.email}</p>
+          <p className="text-left"><b>Id:</b> {value.id}</p>
           
         </div>
       </div>
