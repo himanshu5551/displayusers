@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background-color: rgb(194, 62, 62);
+  font-family: 'Roboto Slab', serif;
+}
+.avatarimage{
+  width:6vw; 
+  height: auto;
+  border-radius: 12px;
+}
+.main-box{
+  display: flex;
+  background-color: rgb(238, 231, 231);
+  position: relative;
+  left: 36.8vw;
+  top:5vh;
+  width: 24vw;
+  border-radius: 12px;
+  padding: 13px;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.data-box{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  
+  position:relative;
+  left: 1vw;
+  padding: 2px;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size:10px;
+  
+}
+.task2{
+  color: rgb(185, 240, 56);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(30px);
+
+}
+.email{
+  color: brown;
+  font-size: 13px;
+}
+.paginationbtns{
+  /* background-color: rgb(175, 42, 42); */
+  
+  width: 70%;
+  
+  display:flex;
+  justify-content:center;
+  position: relative;
+  top: 7vh;
+  left: 11.5vw;
+  list-style: none;
+  transition: transform .5s;
+}
+.paginationbtns a{
+  padding: 10px;
+  margin: 8px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  
+}
+
+.paginationbtns :hover{
+   transform: scale(1.08);
+}
+.paginationbtns a:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.paginationbtns a:active{
+ background-color: brown;
+}
