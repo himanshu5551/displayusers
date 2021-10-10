@@ -30,7 +30,7 @@ function App() {
       //     </div>
       //     </a>
       <div className="card" className="d-flex flex-row p-3 m-3 rounded mx-auto d-block text-white bg-dark"  style={{ width: ' 25rem' }}>
-        <img src={value.avatar} className="align-self-center" className="rounded" />
+        <img src={value.avatar} className="align-self-center" className="rounded" alt="" />
         <div className="card-body">
           <h5 className="">{value.first_name} {value.last_name}</h5>
           <p className="text-left"><b>Email:</b> {value.email}</p>
