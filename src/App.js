@@ -20,20 +20,12 @@ function App() {
 
   let displyusers = userdata.slice(pagenumber * 3, usersperpage + usersvisited).map((value) => {
     return (
-      //  <a href={value.avatar}>
-      //     <div className="container">
-      //       <img src={value.avatar} alt="avatar" className="avatarimage" />
-      //       <div className="data-box">
-      //         <h1> {value.first_name} <span>{value.last_name}</span> </h1>
-      //         <h3 className="email"> {value.email} </h3>
-      //       </div>
-      //     </div>
-      //     </a>
+     
       <div className="card" className="d-flex flex-row p-3 m-3 rounded mx-auto d-block text-white bg-dark"  style={{ width: ' 25rem' }}>
         <img src={value.avatar} className="align-self-center" className="rounded" alt="" />
         <div className="card-body">
-          <h5 className="">{value.first_name} {value.last_name}</h5>
-          <p className="text-left"><b>Email:</b> {value.email}</p>
+          <h5 className="">{value.first_name} <span> {value.last_name} </span></h5>
+          <p className="text-left">{value.email}</p>
           
         </div>
       </div>
@@ -52,6 +44,7 @@ function App() {
       <h5 className="rounded mx-auto d-block text-center m-4"> Excellence Interview Task -2 </h5>
 
       {displyusers}
+
       <ReactPaginate 
         previousLabel={"Back"}
         nextLabel={"Next"}
